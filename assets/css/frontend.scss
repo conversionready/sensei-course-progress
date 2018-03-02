@@ -117,6 +117,7 @@
 			}
 			&.prev {
 				float: left;
+				text-decoration: none;
 				a {
 					border-right: 1px solid #ddd;
 					&:before {
@@ -126,6 +127,7 @@
 			}
 			&.next {
 				float: right;
+				text-decoration: none;
 				a {
 					&:after {
 						content: "\f054";
