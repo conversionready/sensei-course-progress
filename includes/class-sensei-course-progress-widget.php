@@ -206,7 +206,7 @@ class Sensei_Course_Progress_Widget extends WP_Widget {
 		echo $before_widget; ?>
 
 		<header>
-			<h2 class="course-title"><a href="<?php echo esc_url( $course_url ); ?>"><?php echo esc_html( $course_title ); ?></a></h2>
+			<h2 class="course-title"><a href="<?php echo esc_url( $course_url ); ?>"><?php echo $course_title; ?></a></h2>
 		</header>
 
 		<?php
@@ -228,7 +228,7 @@ class Sensei_Course_Progress_Widget extends WP_Widget {
 
 			foreach( $lesson_array as $lesson ) {
 				$lesson_id = absint( $lesson->ID );
-				$lesson_title = htmlspecialchars( $lesson->post_title );
+				$lesson_title = $lesson->post_title;
 				$lesson_url = get_the_permalink( $lesson_id );
 
 				// add 'completed' class to completed lessons
