@@ -40,7 +40,7 @@ if ( ! class_exists( 'WooThemes_Sensei_Dependencies' ) ) {
  */
 if ( ! function_exists( 'is_sensei_active' ) ) {
   function is_sensei_active() {
-    return WooThemes_Sensei_Dependencies::sensei_active_check();
+    return true;
   }
 }
 
